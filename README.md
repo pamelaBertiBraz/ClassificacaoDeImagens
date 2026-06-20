@@ -69,11 +69,9 @@ A matriz de confusão demonstra que o modelo apresentou melhor desempenho na ide
 
 ![Métricas de Classificação](https://imgur.com/VnVA2Zz.png)
 
-**Acurácia Geral:** 62,00%
+As métricas obtidas indicam um desempenho moderado do classificador. A classe Cat apresentou maior recall (0,69), indicando que o modelo conseguiu identificar corretamente a maior parte das imagens de gatos. Já a classe Dog apresentou maior precisão (0,64), porém com recall inferior (0,55), demonstrando maior dificuldade na identificação correta dos cachorros.
 
-**Macro Average:** Precisão = 0,62 | Recall = 0,62 | F1-Score = 0,62
-
-**Weighted Average:** Precisão = 0,62 | Recall = 0,62 | F1-Score = 0,62
+O F1-Score, que representa o equilíbrio entre precisão e recall, foi de 0,64 para gatos e 0,59 para cachorros. A acurácia geral obtida foi de 62%, indicando que o modelo classificou corretamente 248 das 400 imagens do conjunto de teste.
 
 #### Análise dos Resultados
 
@@ -91,5 +89,82 @@ Mesmo com essa limitação, o objetivo do projeto foi atingido, pois foi possív
 - Repositório GitHub: <https://github.com/pamelaBertiBraz/ClassificacaoDeImagens>
 - Vídeo Google Drive: <>
 - Dataset utilizado: <https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset>
+
+--- 
+
+## 📄​ Instruções de Uso
+
+### 1. Obter os arquivos do projeto
+
+Baixe todos os arquivos disponibilizados no repositório Google Drive ou GitHub.
+
+### 2. Baixar o dataset
+
+Realize o download do dataset PetImages disponível em:
+
+https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset
+
+Após o download, organize as imagens em pastas separadas para treinamento e teste, contendo as classes:
+
+- Cat
+- Dog
+
+### 3. Configurar os caminhos do projeto
+
+Nos arquivos de configuração, altere:
+
+- `caminho_modulos`
+- `caminho_base`
+
+para os diretórios correspondentes ao seu ambiente.
+
+### 4. Configurar o ambiente no Google Colab
+
+Execute a célula responsável pela montagem do Google Drive:
+
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+```
+
+### 5. Instalar dependências
+
+Execute a célula responsável pela biblioteca Mahotas:
+
+```
+!pip install mahotas
+```
+
+As principais bibliotecas utilizadas foram:
+
+- OpenCV
+- NumPy
+- Mahotas
+- Scikit-Learn
+- Matplotlib
+- Seaborn
+
+### 6. Executar o sistema
+
+Após a configuração do ambiente:
+
+1. Execute a célula principal do projeto;
+2. Acesse a interface inicial;
+3. Extraia as características Haralick das imagens;
+4. Treine o classificador SVM;
+5. Realize a classificação das imagens de teste;
+6. Visualize as métricas de avaliação geradas pelo sistema.
+
+### 7. Resultados
+
+Ao final da execução serão gerados:
+
+- Modelo treinado SVM;
+- Matriz de confusão;
+- Relatório de classificação;
+- Precisão (Precision);
+- Recall;
+- F1-Score;
+- Acurácia.
 
 
