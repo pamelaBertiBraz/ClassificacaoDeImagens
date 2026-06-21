@@ -87,7 +87,7 @@ Mesmo com essa limitação, o objetivo do projeto foi atingido, pois foi possív
 
 - Repositório Google Drive: <https://drive.google.com/drive/folders/1wD2rUkinDMPRkEAvQTkUmnAmLoyYCDa8?usp=drive_link>
 - Repositório GitHub: <https://github.com/pamelaBertiBraz/ClassificacaoDeImagens>
-- Vídeo Google Drive: <>
+- Vídeo Google Drive: <https://drive.google.com/file/d/1WPhei666_EI92xmOhUxh93qp9O7_RcDt/view?usp=drive_link>
 - Dataset utilizado: <https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset>
 
 --- 
